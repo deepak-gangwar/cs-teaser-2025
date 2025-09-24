@@ -212,8 +212,6 @@ html {
 }
 
 body {
-  /* background-color: var(--color-primary); */
-  /* color: var(--color-secondary); */
   font-family: 'AltRivera Regular', sans-serif;
   height: 100vh;
   height: 100svh;
@@ -233,9 +231,89 @@ body {
   z-index: -1;
   pointer-events: none;
 }
-
+.description br {
+  margin-bottom: 10px;
+}
 /*Mobile Styles (< 767px)*/
 @media (max-width: 767px) {
+  @media (max-width: 767px) {
+      .header {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        flex-shrink: 0;
+      }
+  
+      .header-left {
+        font-family: 'AltRivera Medium';
+        font-size: 12px;
+        letter-spacing: 0.3px;
+      }
+  
+      .header-right {
+        font-size: 10px;
+        font-family: 'AltRivera Regular';
+      }
+  
+      .main-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+        height: 100vh;
+      }
+  
+      .hero {
+        width: 80vw;
+        max-width: 300px;
+      }
+  
+      .description {
+        font-size: 11px;
+        max-width: 350px;
+        margin-top: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-family: 'AltRivera Bold';
+        line-height: 1.4;
+      }
+  
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 20px 20px 20px;
+      font-size: 9px;
+      flex-shrink: 0;
+      flex-wrap: nowrap;
+      gap: 10px;
+      position: absolute;
+      bottom: 0;
+      font-family: 'AltRivera Regular';
+      width: 100%;
+    }
+      
+    .footer span {
+      flex-shrink: 0;
+      display: none;
+    }
+      
+    .footer span:nth-child(1),
+    .footer span:nth-child(2),
+    .footer span:nth-child(7) {
+       display: block;
+    }
+    .description br {
+          margin-bottom: 12px;
+        }
+}
 
 }
 
@@ -316,6 +394,7 @@ body {
     .footer span:nth-child(7) {
         display: block;
      }
+    
 }
 
 
@@ -355,7 +434,7 @@ body {
     }
 
     .hero {
-width: 47.6234375vw;
+     width: 47.6234375vw;
     }
 
   .description {
