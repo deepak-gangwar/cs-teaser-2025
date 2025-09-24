@@ -212,6 +212,7 @@ html {
 }
 
 body {
+  color: var(--color-primary);
   font-family: 'AltRivera Regular', sans-serif;
   height: 100vh;
   height: 100svh;
