@@ -219,6 +219,8 @@ body {
   height: 100svh;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .bg-video {
@@ -232,36 +234,39 @@ body {
   pointer-events: none;
 }
 
-/*    Mobile Styles (< 767px) */
+/*Mobile Styles (< 767px)*/
 @media (max-width: 767px) {
 
 }
 
-/*    Tablet / iPad Styles (768px - 1280px) */
+/*Tablet / iPad Styles (768px - 1280px)*/
 @media (min-width: 768px) and (max-width: 1280px) {
 
 }
 
-/*    Desktop Styles (> 1280px) */
+
+/* Desktop Styles (> 1280px) */
+@media (min-width: 1281px) {
 .header {
+  width: 100%;
   position: absolute;
   top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 50px;
-    flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  flex-shrink: 0;
   }
 
   .header-left {
+    font-family: 'AltRivera Medium';
     font-size: 16px;
-    font-weight: 400;
     letter-spacing: 0.5px;
   }
 
   .header-right {
     font-size: 14px;
-    font-weight: 400;
+    font-family: 'AltRivera Regular';
   }
 
   .main-content {
@@ -280,31 +285,30 @@ width: 47.6234375vw;
     }
 
   .description {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6;
-    max-width: 600px;
+    font-size: 14px;
+    max-width: 7250px;
     margin-top: 20px;
+    margin-left: 598px;
+    margin-right: 598px;
+    font-family: 'AltRivera Bold';
    }
       
-  .description .highlight {
-   font-weight: 500;
-   }
  .footer {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 50px;
-   color: #888888;
+   padding: 0px 50px 10px 50px;
    font-size: 12px;
-   font-weight: 400;
    flex-shrink: 0;
-   flex-wrap: wrap;
+   flex-wrap: nowrap;
    gap: 20px;
    position: absolute;
    bottom: 0;
+   font-family: 'AltRivera Regular';
+   width: 100%;
  }
 
  .footer span {
    flex-shrink: 0;
  }
+}
