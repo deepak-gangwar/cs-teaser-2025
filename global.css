@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'FontOne';
+    src: url('/assets/subset-ALTRiviera-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FontTwo';
+    src: url('/assets/subset-ALTRiviera-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FontThree';
+    src: url('/assets/subset-ALTRiviera-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FontFour';
+    src: url('/assets/subset-ALTRiviera-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
