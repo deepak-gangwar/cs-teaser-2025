@@ -243,8 +243,9 @@ body {
 }
 
 /*    Desktop Styles (> 1280px) */
-@media (min-width: 1281px) {
 .header {
+  position: absolute;
+  top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -271,6 +272,11 @@ body {
     align-items: center;
     text-align: center;
     padding: 0 50px;
+    height: 100vh;
+    }
+
+    .hero {
+width: 47.6234375vw;
     }
 
   .description {
@@ -295,9 +301,10 @@ body {
    flex-shrink: 0;
    flex-wrap: wrap;
    gap: 20px;
+   position: absolute;
+   bottom: 0;
  }
 
  .footer span {
    flex-shrink: 0;
  }
-}
