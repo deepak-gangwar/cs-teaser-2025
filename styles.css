@@ -183,29 +183,29 @@ html {
 
 
 @font-face {
-    font-family: 'FontOne';
-    src: url('/assets/subset-ALTRiviera-Bold.woff2') format('woff2');
+    font-family: 'AltRivera Bold';
+    src: url('/assets/fonts/ALTRiviera-Bold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'FontTwo';
-    src: url('/assets/subset-ALTRiviera-Light.woff2') format('woff2');
+    font-family: 'AltRivera Light';
+    src: url('/assets/fonts/ALTRiviera-Light.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'FontThree';
-    src: url('/assets/subset-ALTRiviera-Medium.woff2') format('woff2');
+    font-family: 'AltRivera Medium';
+    src: url('/assets/fonts/ALTRiviera-Medium.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'FontFour';
-    src: url('/assets/subset-ALTRiviera-Regular.woff2') format('woff2');
+    font-family: 'AltRivera Regular';
+    src: url('/assets/fonts/ALTRiviera-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -214,6 +214,7 @@ html {
 body {
   /* background-color: var(--color-primary); */
   /* color: var(--color-secondary); */
+  font-family: 'AltRivera Regular', sans-serif;
   height: 100vh;
   height: 100svh;
   width: 100%;
