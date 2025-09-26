@@ -183,36 +183,40 @@ html {
 
 
 @font-face {
-    font-family: 'AltRivera Bold';
-    src: url('/assets/fonts/ALTRiviera-Bold.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'AltRivera Bold';
+  src: url('./public/fonts/ALTRiviera-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'AltRivera Light';
-    src: url('/assets/fonts/ALTRiviera-Light.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'AltRivera Light';
+  src: url('./public/fonts/ALTRiviera-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'AltRivera Medium';
-    src: url('/assets/fonts/ALTRiviera-Medium.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'AltRivera Medium';
+  src: url('./public/fonts/ALTRiviera-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'AltRivera Regular';
-    src: url('/assets/fonts/ALTRiviera-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'AltRivera Regular';
+  src: url('./public/fonts/ALTRiviera-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
-  color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
   font-family: 'AltRivera Regular', sans-serif;
   height: 100vh;
   height: 100svh;
@@ -222,7 +226,18 @@ body {
   flex-direction: column;
 }
 
-.bg-video {
+.no-select {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  touch-action: none;
+  touch-callout: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -230,36 +245,28 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  pointer-events: none;
-}
-.description br {
-  margin-bottom: 10px;
 }
 
-/* Common Styles for all devices */
-.header {
+header {
   width: 100%;
   position: absolute;
   top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-shrink: 0;
+  padding: 20px 2.6vw;
+  font-size: min(0.8vw, 14px);
 }
 
-.header-left {
+.hl {
   font-family: 'AltRivera Medium';
-  font-size: 16px;
-  font-weight: 500;
 }
 
-.header-right {
-  font-size: 14px;
-  font-family: 'AltRivera Regular';
-  font-weight: 400;
+.hr {
+  font-size: min(0.75vw, 14px);
 }
 
-.main-content {
+main {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -269,131 +276,34 @@ body {
   height: 100vh;
 }
 
-.description {
-  font-family: 'AltRivera Bold';
-  font-weight: 700;
+.hero {
+  padding-top: 5.9vw;
+  margin-left: -3vw;
+  width: min(47.6234375vw, 100vh);
+  max-width: 1080px;
 }
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.title {
+  font-family: 'AltRivera Bold';
+  font-size: min(0.8vw, 14px);
+  display: inline-block;
+  margin-top: 1.6vw;
+}
+
+.subtitle {
+  font-size: min(0.94vw, 14px);
+  margin-top: min(0.6vw, 10px);
+}
+
+footer {
   position: absolute;
   bottom: 0;
-  flex-shrink: 0;
-  flex-wrap: nowrap;
   width: 100%;
-  font-family: 'AltRivera Regular';
 }
 
-.footer span {
-  flex-shrink: 0;
-  display: none;
-}
-
-.footer span:nth-child(1),
-.footer span:nth-child(2),
-.footer span:nth-child(7) {
-  display: block;
-}
-
-/* Mobile Styles (max-width: 767px) */
-@media (max-width: 767px) {
-  .header {
-    padding: 25px 20px;
-  }
-
-  .header-left {
-    letter-spacing: 0.3px;
-  }
-
-  .main-content {
-    padding: 0 32px;
-  }
-
-  .hero {
-    width: 80vw;
-    max-width: 300px;
-  }
-
-  .description {
-    font-size: 11px;
-    width: 350px;
-    margin: 28px 38px;
-  }
-
-  .description br {
-    margin-bottom: 12px;
-  }
-
-  .footer {
-    padding: 0 20px 18px;
-    font-size: 10px;
-    gap: 47px;
-  }
-}
-
-/*  Tablet / iPad Styles (768px - 1280px) */
-@media (min-width: 768px) and (max-width: 1280px) {
-  .header {
-    padding: 30px;
-  }
-
-  .header-left {
-    letter-spacing: 0.5px;
-  }
-
-  .main-content {
-    padding: 0 30px;
-  }
-
-  .hero {
-    width: 60vw;
-    max-width: 500px;
-  }
-
-  .description {
-    font-size: 14px;
-    width: 707px;
-    margin: 30px 64px 0;
-  }
-
-  .footer {
-    padding: 0 30px 15px;
-    font-size: 12px;
-    gap: 15px;
-    font-weight: 400;
-  }
-}
-
-/* Desktop Styles (>1280px) */
-@media (min-width: 1281px) {
-  .header {
-    padding: 30px 50px;
-  }
-
-  .header-left {
-    letter-spacing: 0.5px;
-  }
-
-  .main-content {
-    padding: 0 50px;
-  }
-
-  .hero {
-    width: 47.6234375vw;
-  }
-
-  .description {
-    font-size: 14px;
-    width: 725px;
-    margin: 30px 598px 0;
-    
-  }
-
-  .footer {
-    padding: 0 50px 10px;
-    font-size: 12px;
-    gap: 20px;
-  }
+ul {
+  display: flex;
+  padding: 0 2.6vw 12px;
+  font-size: min(0.65vw, 14px);
+  justify-content: space-between;
 }

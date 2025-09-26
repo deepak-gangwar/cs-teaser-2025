@@ -3,42 +3,62 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Teaser site</title>
+      <title>Rolf Jensen | Brooklyn, NY</title>
+      <meta name="description" content="Creative Director and Designer based in Brooklyn, NY.with over 15 years of interactive and brand design experience. Part of the design team at GoDaddy. Previously at Google, Apple and Microsoft.">
+      <meta name="robots" content="index, follow">
+      <meta name="googlebot" content="index, follow">
+      <meta property="og:title" content="Rolf Jensen">
+      <meta property="og:description" content="Creative Director and Designer based in Brooklyn, NY.with over 15 years of interactive and brand design experience. Part of the design team at GoDaddy. Previously at Google, Apple and Microsoft.">
+      <meta property="og:url" content="https://rolfjensen.vercel.app">
+      <meta property="og:image" content="https://a.storyblok.com/f/286883971698212/1200x630/2d7fe8c234/shareable.png">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="Rolf Jensen">
+      <meta name="twitter:description" content="Creative Director and Designer based in Brooklyn, NY.with over 15 years of interactive and brand design experience. Part of the design team at GoDaddy. Previously at Google, Apple and Microsoft.">
+      <meta name="twitter:image" content="https://a.storyblok.com/f/286883971698212/1200x630/2d7fe8c234/shareable.png">
       <link rel="stylesheet" href="styles.css" />
+      <link rel="icon" href="/public/favicon.png" media="(prefers-color-scheme: light)" />
+      <link rel="icon" href="/public/favicon-dark.png" media="(prefers-color-scheme: dark)" />
+      <link rel="icon" href="/public/favicon.png" />
    </head>
    <body>
-      <header class="header">
-         <div class="header-left">Flow Identity</div>
-         <div class="header-right">Presence In Process</div>
+      <header>
+         <p class="hl">Raw Identity</p>
+         <p class="hr">Presence in Process</p>
       </header>
 
-      <main class="main-content">
+      <main>
          <img
-            class="hero"
+            class="hero no-select"
             src="/public/assets/hero.svg"
             alt="Ascending into the unconscious"
+            width="914.37"
+            height="442"
          />
 
-         <div class="description">
-            <span class="highlight">YOU'LL FIND ME IN THE BASEMENT.</span><br />
-            Forget project slabs, this is raw, untamed conscious design
-            philosophy.
+         <div class="body">
+            <span class="title">YOU'LL FIND ME IN THE BASEMENT.</span>
+            <p class="subtitle">
+               Forget project slabs, this is raw, untamed conscious design
+               philosophy.
+            </p>
          </div>
       </main>
       
-      <footer class="footer">
-         <span>Clarity over Noise</span>
-         <span>Simplicity with Depth</span>
-         <span>Ethics before Aesthetics</span>
-         <span>Presence in Process</span>
-         <span>Adaptation with Composure</span>
-         <span>Human Flourishing as North Star</span>
-         <span>Letting Go of Ego</span>
+      <footer>
+         <ul>
+            <li>Clarity over Noise</li>
+            <li>Simplicity with Depth</li>
+            <li>Ethics before Aesthetics</li>
+            <li>Presence in Process</li>
+            <li>Adaptation with Composure</li>
+            <li>Human Flourishing as North Star</li>
+            <li>Letting Go of Ego</li>
+         </ul>
       </footer>
-      <video autoplay muted loop playsinline class="bg-video">
-         <source src="public/assets/bgvideo.mp4" type="video/mp4" />
-      </video>
-      <audio id="bg-music" src="public/assets/bgmusic.mp3" loop></audio>
+
+      <video autoplay muted loop playsinline src="public/assets/bg.mp4" class="bg no-select" />
+      <audio class="music" src="public/assets/bgmusic.mp3" loop></audio>
+
       <script src="index.js"></script>
    </body>
 </html>
