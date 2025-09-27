@@ -256,6 +256,11 @@ header {
   align-items: center;
   padding: 20px 2.6vw;
   font-size: min(0.8vw, 14px);
+  
+  @media (max-width: 768px) {
+    font-size: min(4vw, 18px);
+    padding: 20px 20px;
+  }
 }
 
 .hl {
@@ -264,6 +269,10 @@ header {
 
 .hr {
   font-size: min(0.75vw, 14px);
+
+  @media (max-width: 768px) {
+    font-size: min(4vw, 18px);
+  }
 }
 
 main {
@@ -281,6 +290,10 @@ main {
   margin-left: -3vw;
   width: min(47.6234375vw, 100vh);
   max-width: 1080px;
+
+  @media (max-width: 768px) {
+    width: 83.3155216285vw;
+  }
 }
 
 .title {
@@ -288,11 +301,24 @@ main {
   font-size: min(0.8vw, 14px);
   display: inline-block;
   margin-top: 1.6vw;
+  
+  @media (max-width: 768px) {
+    font-size: min(3vw, 14px);
+    margin-top: 20px;
+  }
 }
 
 .subtitle {
-  font-size: min(0.94vw, 14px);
+  font-size: min(0.94vw, 18px);
   margin-top: min(0.6vw, 10px);
+  
+  @media (max-width: 768px) {
+    width: fit-content;
+    margin: 0 auto;
+    max-width: 75%;
+    font-size: min(3.8vw, 18px);
+    margin-top: 10px;
+  }
 }
 
 footer {
@@ -306,4 +332,18 @@ ul {
   padding: 0 2.6vw 12px;
   font-size: min(0.65vw, 14px);
   justify-content: space-between;
+  
+  @media (max-width: 768px) {
+    padding: 0 20px 12px;
+    font-size: min(3vw, 18px)
+  }
+}
+
+@media (max-width: 768px) {
+  li:nth-of-type(3), 
+  li:nth-of-type(4), 
+  li:nth-of-type(5), 
+  li:nth-of-type(6) {
+    display: none;
+  }
 }
