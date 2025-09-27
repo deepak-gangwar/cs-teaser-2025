@@ -3,93 +3,21 @@
   --color-secondary: #EEE8DA;
   --color-accent: #FE3001;
 }
-* {
-  padding: 0;
-  box-sizing: border-box;
-}
 
-/* --- Simple Modern Reset --- */
-
-/* Classic Meyer Reset */
 html,
 body,
 div,
 span,
-applet,
-object,
-iframe,
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 p,
-blockquote,
-pre,
 a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
 img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
 ul,
 li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
 footer,
 header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
 audio,
 video {
   margin: 0;
@@ -100,61 +28,12 @@ video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-/* Modern tweaks */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Lists */
-ol,
-ul {
-  list-style: none;
-}
-
-/* Tables */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* Links & buttons */
-a,
-button {
-  text-decoration: none;
-  color: inherit;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font: inherit;
-}
-
-/* Form elements */
-input,
-textarea,
-select,
-button {
-  font: inherit;
-  outline: none;
-}
-
-/* Images & media */
 img,
 video,
 audio {
@@ -163,36 +42,15 @@ audio {
   display: block;
 }
 
-/* Placeholder color reset */
-::placeholder {
-  color: inherit;
-  opacity: 0.7;
-}
-
-/* Hidden elements */
-[hidden] {
-  display: none;
-}
-
-/* Optional: smoother text */
 html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 @font-face {
   font-family: 'AltRivera Bold';
   src: url('./public/fonts/ALTRiviera-Bold.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'AltRivera Light';
-  src: url('./public/fonts/ALTRiviera-Light.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -261,6 +119,11 @@ header {
     font-size: min(4vw, 18px);
     padding: 20px 20px;
   }
+
+  @media (min-width: 769px) and (max-width: 1280px) {
+    font-size: 21px;
+    padding: 30px 40px;
+  }
 }
 
 .hl {
@@ -272,6 +135,10 @@ header {
 
   @media (max-width: 768px) {
     font-size: min(4vw, 18px);
+  }
+
+  @media (min-width: 769px) and (max-width: 1280px) {
+    font-size: 21px;
   }
 }
 
@@ -294,6 +161,10 @@ main {
   @media (max-width: 768px) {
     width: 83.3155216285vw;
   }
+
+  @media (min-width: 769px) and (max-width: 1280px) {
+    width: 79.4196642686vw
+  }
 }
 
 .title {
@@ -305,6 +176,11 @@ main {
   @media (max-width: 768px) {
     font-size: min(3vw, 14px);
     margin-top: 20px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1280px) {
+    font-size: 1.9vw;
+    margin-top: 36px;
   }
 }
 
@@ -319,6 +195,11 @@ main {
     font-size: min(3.8vw, 18px);
     margin-top: 10px;
   }
+
+  @media (min-width: 769px) and (max-width: 1280px) {
+    font-size: 2.1vw;
+    margin-top: 20px;
+  }
 }
 
 footer {
@@ -329,6 +210,7 @@ footer {
 
 ul {
   display: flex;
+  list-style: none;
   padding: 0 2.6vw 12px;
   font-size: min(0.65vw, 14px);
   justify-content: space-between;
@@ -337,9 +219,14 @@ ul {
     padding: 0 20px 12px;
     font-size: min(3vw, 18px)
   }
+
+  @media (min-width: 769px) and (max-width: 1280px) {
+    padding: 0 40px 20px;
+    font-size: 21px
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   li:nth-of-type(3), 
   li:nth-of-type(4), 
   li:nth-of-type(5), 
